@@ -1,113 +1,100 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import profilePic from "../public/foto_deardo.png";
+import linkedinLogo from "../public/logo-linkedin.png";
+import emailLogo from "../public/logo-email.png";
+import telegramLogo from "../public/logo-telegram.png";
+import porfilePicMd from "../public/deardo-edited.png";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome back to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <section>
+        <div className="first-page mt-16 px-8">
+          <div className="text-description">
+            <div>
+              👋 Hello! I'm{" "}
+              <span className="font-semibold">Deardo Satria.</span>
+            </div>
+            <div className="text-4xl font-bold mt-4">
+              I'm a Front-End Web Developer
+            </div>
+            <div className="text-neutral-600 text-lg mt-3">
+              A fellow Junior Front-End Developer based in Indonesia.
+            </div>
+            <div className="mt-6 space-x-4">
+              <button
+                href=""
+                className="button-projects bg-slate-800 text-white text-sm px-4 py-3 rounded-full duration-300 hover:scale-110 hover:bg-slate-600"
+              >
+                My projects
+            </button>
+              <a href="" className="text-sm">
+                Contact me
+              </a>
+            </div>
+            <div className="image-container mt-10 flex justify-center items-center px-8">
+              <div className="flex items-center justify-center aspect-square overflow-hidden rounded-full bg-neutral-300">
+                <Image
+                  src={profilePic}
+                  className="z-10 w-full -mr-7 -mt-6"
+                ></Image>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-
+        <div className="second-page mt-16 px-8">
+          <div className="text-description">
+            <div className="text-3xl font-bold">Projects</div>
+            <div className="mt-4">
+              As a junior web developer, I mainly focused on front-end side.
+              Here are some of my concept projects.
+            </div>
+          </div>
+          <div className="projects mt-4 h-96 bg-neutral-200 rounded-md"></div>
+        </div>
+        <div className="third-page mt-10 px-8">
+          <div className="text-description">
+            <div className="text-3xl font-bold">Certification</div>
+            <div className="mt-4">Here are some of my certifications.</div>
+          </div>
+          <div className="certifications mt-4 h-96 bg-neutral-200 rounded-md"></div>
+        </div>
+        <div className="fourth-page h-[60vh] px-8 flex justify-center items-center text-center">
+          <div className="text-description">
+            <div className="text-xl font-bold">
+              Thank you for visiting my page!
+            </div>
+            <div>Contact me:</div>
+            <div className="mt-5 flex justify-around w-60 mx-auto">
+              <a href="">
+                <Image src={linkedinLogo}></Image>
+              </a>
+              <a href="">
+                <Image src={emailLogo}></Image>
+              </a>
+              <a href="">
+                <Image src={telegramLogo}></Image>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+        <div className="bg-black h-12 grid justify-center items-center">
+          <div className="text-neutral-200 text-sm">
+            2024 | Made by Deardo Satria
+          </div>
+        </div>
       </footer>
 
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
-
       <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
+        html {
+          font-family: Inter, Helvetica, sans-serif;
         }
       `}</style>
     </div>
