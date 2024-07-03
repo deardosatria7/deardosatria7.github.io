@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
@@ -103,6 +104,7 @@ export default function Gitclick() {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="700"
+            data-aos-once="true"
           >
             <div className="px-16 md:px-24 mt-16">
               <div className="text-4xl md:text-5xl font-bold max-w-xs md:max-w-md">
@@ -138,12 +140,17 @@ export default function Gitclick() {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="700"
+            data-aos-once="true"
           >
             <div
               className="border border-neutral-700 hover:border-0 hover:bg-neutral-100 hover:scale-110 hover:text-black duration-[400ms] lg:w-1/4 h-80 rounded-2xl p-7 px-10"
               id="card"
             >
-              <Image src={people_icons} alt="" className="w-20 lg:w-24"></Image>
+              <Image
+                src={people_icons}
+                alt=""
+                className="w-20 lg:w-24 opacity-85"
+              ></Image>
               <div className="mt-4 font-semibold text-xl">Collaboration</div>
               <div className="mt-3 text-sm" id="info-text">
                 Help is a priority, even if it's not directly related to the
@@ -154,7 +161,11 @@ export default function Gitclick() {
               className="border border-neutral-700 hover:border-0 hover:bg-neutral-100 hover:scale-110 hover:text-black duration-[400ms] lg:w-1/4 h-80 rounded-2xl p-7"
               id="card"
             >
-              <Image src={lock_icons} alt="" className="w-20 lg:w-24" />
+              <Image
+                src={lock_icons}
+                alt=""
+                className="w-20 lg:w-24 opacity-85"
+              />
               <div className="mt-4 font-semibold text-xl">Security</div>
               <div className="mt-3 text-sm" id="info-text">
                 Manage your work with built-in agile features. We update them
@@ -165,7 +176,11 @@ export default function Gitclick() {
               className="border border-neutral-700 hover:border-0 hover:bg-neutral-100 hover:scale-110 hover:text-black duration-[400ms] lg:w-1/4 h-80 rounded-2xl p-7"
               id="card"
             >
-              <Image src={graph_icons} alt="" className="w-20 lg:w-24"></Image>
+              <Image
+                src={graph_icons}
+                alt=""
+                className="w-20 lg:w-24 opacity-85"
+              ></Image>
               <div className="mt-4 font-semibold text-xl">Analytics</div>
               <div className="mt-3 text-sm" id="info-text">
                 View reports and analysis of your team's work. It helps to do
@@ -180,6 +195,7 @@ export default function Gitclick() {
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="700"
+            data-aos-once="true"
           >
             <div className="text-3xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-500 font-extrabold">
               We are a company that has created a DevOps platform for software
@@ -198,6 +214,7 @@ export default function Gitclick() {
               data-aos="fade-up"
               data-aos-easing="ease-in-out"
               data-aos-duration="700"
+              data-aos-once="true"
             >
               <div className="group border border-neutral-700 hover:border-0 hover:bg-gradient-to-r hover:from-teal-300 hover:to-cyan-300 hover:scale-110 hover:text-black duration-[400ms] lg:w-1/4 rounded-2xl p-7">
                 <div className="space-y-5">
@@ -325,19 +342,20 @@ export default function Gitclick() {
               </div>
               <div className="hover:text-white cursor-pointer">Patreon</div>
             </div>
-            <div className="text-center text-sm text-neutral-500 bg-black py-4">
-              Designed by
-              <a
-                href="https://dribbble.com/shots/20540597-Web-design-landing-page-ui"
-                className="hover:text-white"
-              >
-                Ronas IT @dribble
-              </a>
-              |{" "}
-              <a href="#" className="hover:text-white">
-                deardosatria_
-              </a>
-            </div>
+          </div>
+          <div className="text-center text-sm text-neutral-500 bg-black py-4 ">
+            Designed by{" "}
+            <a
+              href="https://dribbble.com/shots/20540597-Web-design-landing-page-ui"
+              target="_blank"
+              className="hover:text-white"
+            >
+              Ronas IT @dribble
+            </a>
+            |{" "}
+            <Link href={"/"} className="hover:text-white">
+              deardosatria_
+            </Link>
           </div>
         </section>
       </div>
