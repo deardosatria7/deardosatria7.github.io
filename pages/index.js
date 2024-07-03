@@ -1,11 +1,15 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import ThemeChanger from "../components/ThemeChanger";
 import profilePic from "../public/foto_deardo.png";
 import linkedinLogo from "../public/logo-linkedin.png";
 import emailLogo from "../public/logo-email.png";
 import telegramLogo from "../public/logo-telegram.png";
-import ThemeChanger from "../components/ThemeChanger";
+import {FaLinkedin} from "react-icons/fa6";
+import {FaTelegram} from "react-icons/fa";
+import {MdEmail} from "react-icons/md";
+import {FaInstagram} from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -14,7 +18,9 @@ export default function Home() {
         <title>Portfolio | Deardo Satria</title>
       </Head>
       <section>
-        <div className="first-page mt-16 px-8 flex flex-col md:items-center md:flex-row max-w-[900px] md:h-[70svh] mx-auto ">
+        {/* First page */}
+        <div className="first-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:flex-row max-w-[900px] md:h-[70svh] mx-auto ">
+          {/* ThemeChanger button */}
           <div className="fixed grid items-center justify-center bottom-6 right-4 p-4 rounded-full bg-neutral-300 dark:bg-neutral-500 shadow-md cursor-pointer">
             <ThemeChanger />
           </div>
@@ -27,16 +33,19 @@ export default function Home() {
               I'm a Front-End Web Developer
             </div>
             <div className="text-neutral-600 dark:text-neutral-200 mt-3">
-              A fellow Junior Front-End Developer based in Indonesia.
+              A fresh graduate Junior Front-End Developer based in Indonesia.
             </div>
-            <div className="mt-6 space-x-6">
+            <div className="mt-6 space-x-4">
               <button
-                href=""
-                className="button-projects bg-slate-800 dark:bg-blue-700 dark:hover:bg-white text-white font-bold text-sm px-4 py-2 rounded-full duration-300 hover:scale-110 hover:text-slate-800 hover:bg-white"
+                href="#"
+                className="button-projects bg-slate-800 dark:bg-blue-700 dark:hover:bg-white text-white hover:font-bold text-sm px-4 py-2 rounded-full duration-300 hover:scale-110 hover:text-slate-800 hover:bg-white"
               >
                 My projects
               </button>
-              <a href="" className="text-sm">
+              <a
+                href="#"
+                className="text-sm hover:bg-neutral-200 dark:hover:bg-white dark:hover:text-black hover:font-bold px-4 py-2 rounded-full duration-300"
+              >
                 Contact me
               </a>
             </div>
@@ -51,7 +60,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="second-page mt-16 px-8 flex flex-col md:items-center md:text-center">
+
+        {/* Second page */}
+        <div className="second-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:text-center">
           <div className="text-description">
             <div className="text-3xl font-bold">Projects</div>
             <div className="mt-4 md:mt-2 max-w-md">
@@ -59,9 +70,11 @@ export default function Home() {
               Here are some of my concept projects.
             </div>
           </div>
-          <div className="projects mt-4 md:mt-8 h-[30vh]  bg-neutral-400 rounded-md"></div>
+          <div className="projects mt-4 md:mt-8 h-[30vh] bg-neutral-400 rounded-md"></div>
         </div>
-        <div className="third-page mt-20 px-8 flex flex-col md:items-center md:text-center">
+
+        {/* Third page */}
+        <div className="third-page mt-20 px-8 sm:px-12 flex flex-col md:items-center md:text-center">
           <div className="text-description">
             <div className="text-3xl font-bold">Certification</div>
             <div className="mt-2 max-w-md">
@@ -70,21 +83,35 @@ export default function Home() {
           </div>
           <div className="certifications mt-4 md:mt-8 h-[30vh] bg-neutral-200 rounded-md"></div>
         </div>
-        <div className="fourth-page h-[60vh] px-8 flex justify-center items-center text-center">
+
+        {/* Fourth page */}
+        <div className="fourth-page h-[60vh] px-8 sm:px-12 flex justify-center items-center text-center">
           <div className="text-description">
             <div className="text-xl font-bold">
               Thank you for visiting my page!
             </div>
             <div>Contact me:</div>
-            <div className="mt-5 flex justify-around w-60 mx-auto">
-              <a href="https://www.linkedin.com/in/deardo-satria-5a8b69278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                <Image src={linkedinLogo} alt="LinkedIn"></Image>
+            <div className="mt-8 flex justify-around w-60 mx-auto text-3xl text-neutral-500">
+              <a
+                href="mailto:deardosatria1@gmail.com"
+                className="hover:text-red-400"
+              >
+                <MdEmail />
               </a>
-              <a href="https://t.me/deardosr">
-                <Image src={telegramLogo} alt="Telegram"></Image>
+              <a
+                href="https://www.linkedin.com/in/deardo-satria-5a8b69278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                className="hover:text-blue-600"
+              >
+                <FaLinkedin />
               </a>
-              <a href="mailto:deardosatria1@gmail.com">
-                <Image src={emailLogo} alt="Email"></Image>
+              <a href="https://t.me/deardosr" className="hover:text-blue-400">
+                <FaTelegram />
+              </a>
+              <a
+                href="https://instagram.com/deardosatria_"
+                className="hover:text-pink-500"
+              >
+                <FaInstagram />
               </a>
             </div>
           </div>
