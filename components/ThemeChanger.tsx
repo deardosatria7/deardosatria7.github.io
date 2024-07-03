@@ -17,7 +17,7 @@ const ThemeChanger = () => {
       return (
         //sun icon
         <button
-          className="text-3xl"
+          className="text-3xl text-black"
           onClick={() => {
             setTheme("light");
           }}
@@ -28,7 +28,7 @@ const ThemeChanger = () => {
     } else {
       return (
         <button
-          className="text-3xl"
+          className="text-3xl text-white"
           onClick={() => {
             setTheme("dark");
           }}

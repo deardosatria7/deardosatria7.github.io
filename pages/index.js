@@ -21,7 +21,7 @@ export default function Home() {
         {/* First page */}
         <div className="first-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:flex-row max-w-[900px] md:h-[70svh] mx-auto ">
           {/* ThemeChanger button */}
-          <div className="fixed grid items-center justify-center bottom-6 right-4 p-4 rounded-full bg-neutral-300 dark:bg-neutral-500 shadow-md cursor-pointer">
+          <div className="fixed grid items-center justify-center bottom-6 right-4 p-3 rounded-full dark:bg-neutral-200 bg-neutral-800 shadow-md cursor-pointer">
             <ThemeChanger />
           </div>
           <div className="text-description">
@@ -117,6 +117,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       <footer>
         <div className="bg-black h-14 grid justify-center items-center">
           <div className="text-neutral-400 text-sm">
