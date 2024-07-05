@@ -21,7 +21,7 @@ export default function Home() {
         {/* First page */}
         <div className="first-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:flex-row max-w-[900px] md:h-[70svh] mx-auto ">
           {/* ThemeChanger button */}
-          <div className="fixed grid items-center justify-center bottom-6 right-4 p-3 rounded-full dark:bg-neutral-200 bg-neutral-800 shadow-md cursor-pointer">
+          <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-neutral-200 bg-neutral-800 shadow-md">
             <ThemeChanger />
           </div>
           <div className="text-description">
@@ -33,7 +33,7 @@ export default function Home() {
               I'm a Front-End Web Developer
             </div>
             <div className="text-neutral-600 dark:text-neutral-200 mt-3">
-              A fresh graduate Junior Front-End Developer based in Indonesia.
+              An undergraduate junior front-end developer based in Indonesia.
             </div>
             <div className="mt-6 space-x-4">
               <button
@@ -67,7 +67,7 @@ export default function Home() {
             <div className="text-3xl font-bold">Projects</div>
             <div className="mt-4 md:mt-2 max-w-md">
               As a junior web developer, I mainly focused on front-end side.
-              Here are some of my concept projects.
+              These are some of my concept projects.
             </div>
           </div>
           <div className="projects mt-4 md:mt-8 h-[30vh] bg-neutral-400 rounded-md"></div>
@@ -78,17 +78,17 @@ export default function Home() {
           <div className="text-description">
             <div className="text-3xl font-bold">Certification</div>
             <div className="mt-2 max-w-md">
-              Here are some of my certifications.
+              These are some of my certification(s).
             </div>
           </div>
           <div className="certifications mt-4 md:mt-8 h-[30vh] bg-neutral-200 rounded-md"></div>
         </div>
 
         {/* Fourth page */}
-        <div className="fourth-page h-[60vh] px-8 sm:px-12 flex justify-center items-center text-center">
+        <div className="fourth-page h-[60vh] px-5 sm:px-12 flex justify-center items-center text-center">
           <div className="text-description">
-            <div className="text-xl font-bold">
-              Thank you for visiting my page!
+            <div className="text-lg md:text-xl font-semibold">
+              Convert your mockups to websites!
             </div>
             <div>Contact me:</div>
             <div className="mt-8 flex justify-around w-60 mx-auto text-3xl text-neutral-500">
@@ -113,6 +113,9 @@ export default function Home() {
               >
                 <FaInstagram />
               </a>
+            </div>
+            <div className="mt-6 text-sm text-neutral-600 dark:text-neutral-400">
+              Thank you for visiting my page!
             </div>
           </div>
         </div>
