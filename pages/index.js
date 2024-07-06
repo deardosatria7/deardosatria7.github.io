@@ -65,14 +65,14 @@ export default function Home() {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <button
-                href="#"
+              <a
+                href="#projects"
                 className="button-projects bg-slate-800 dark:bg-blue-700 dark:hover:bg-white text-white hover:font-bold text-sm px-4 py-2 rounded-full duration-300 hover:scale-110 hover:text-slate-800 hover:bg-white"
               >
                 My projects
-              </button>
+              </a>
               <a
-                href="#"
+                href="#contacts"
                 className="text-sm hover:bg-neutral-200 dark:hover:bg-white dark:hover:text-black hover:font-bold px-4 py-2 rounded-full duration-300"
               >
                 Contact me
@@ -100,9 +100,10 @@ export default function Home() {
         {/* Second page */}
         <div
           className="second-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:text-center"
+          id="projects"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
+          data-aos-duration="600"
           data-aos-once="true"
         >
           <div className="text-description">
@@ -137,7 +138,7 @@ export default function Home() {
           className="third-page mt-20 px-8 sm:px-12 flex flex-col md:items-center md:text-center"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
+          data-aos-duration="600"
           data-aos-once="true"
         >
           <div className="text-description">
@@ -162,9 +163,10 @@ export default function Home() {
         {/* Fourth page */}
         <div
           className="fourth-page h-[80vh] px-5 sm:px-12 flex justify-center items-center text-center"
+          id="contacts"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
+          data-aos-duration="600"
           data-aos-once="true"
         >
           <div className="text-description">
