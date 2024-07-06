@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
       <section>
         {/* First page */}
-        <div className="first-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:flex-row max-w-[900px] md:h-[70svh] mx-auto ">
+        <div className="first-page px-8 sm:px-12 flex flex-col justify-center items-center md:flex-row max-w-[900px] h-[100svh] mx-auto ">
           {/* ThemeChanger button */}
           <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-blue-700 bg-neutral-800 shadow-md z-10">
             <ThemeChanger />
