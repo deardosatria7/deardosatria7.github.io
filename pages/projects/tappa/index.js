@@ -1,5 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import "aos/dist/aos.js";
+import {useEffect} from "react";
 import chat_ui from "../../../public/tappa/chat-ui.png";
 import chat_ui_2 from "../../../public/tappa/chat-ui-2.png";
 import asset1 from "../../../public/tappa/asset-img.jpg";
@@ -14,8 +18,19 @@ import sticker2 from "../../../public/tappa/stickers-2.png";
 import sticker3 from "../../../public/tappa/stickers-3.png";
 import sticker4 from "../../../public/tappa/stickers-4.png";
 import logo_short from "../../../public/tappa/tappa-logo-short.png";
+import {FaLinkedin} from "react-icons/fa6";
+import {FaTelegram} from "react-icons/fa";
 
 export default function Tappa() {
+  useEffect(() => {
+    Aos.init();
+  });
+
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+
   return (
     <div>
       <Head>
@@ -34,17 +49,45 @@ export default function Tappa() {
               </button>
             </div>
             <div className="flex items-center">
-              <button>
+              <button onClick={toggleMenu}>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAbElEQVR4nO3VSwqAMAyE4d6gHlKLh1av8kshPtDWhWahOB9kNe1mICQE+SWgAZJN9M6L7NPEZtx/fppXAT1nySuvsnqOWq+8yqrK9SyGQpW380v5IdDZRO9cVtpjtMdoj78O3WN0j9E9lveaAewKCHZ5+IXWAAAAAElFTkSuQmCC" />
               </button>
             </div>
           </div>
         </div>
+        <div
+          id="mobileMenu"
+          className="hidden md:hidden absolute pr-16 mt-4 right-0 "
+        >
+          <ul className="flex flex-col text-center space-y-3 px-10 py-3 w-auto bg-gray-900 rounded-md">
+            <li>
+              <a href="#" className="hover:text-gray-400">
+                About Tappa!
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" className="hover:text-gray-400">
+                Download
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-gray-400">
+                Features
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
       <div className="bg-black text-white pt-36">
         <section>
-          <div className="first-page flex flex-col justify-center items-center">
+          <div
+            className="first-page flex flex-col justify-center items-center"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="main-text text-center px-6">
               <div className="text-4xl md:text-6xl font-[500] leading-[1.15]">
                 Connect with your <br />
@@ -82,7 +125,13 @@ export default function Tappa() {
               <Image src={chat_ui} alt="Tappa app"></Image>
             </div>
           </div>
-          <div className="second-page mt-10 px-6 md:px-20 flex flex-col">
+          <div
+            className="second-page mt-10 px-6 md:px-20 flex flex-col"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="main-text px-8 text-center md:text-left">
               <div className="text-4xl md:text-5xl font-[500]">
                 Send private messages
@@ -114,7 +163,13 @@ export default function Tappa() {
               </div>
             </div>
           </div>
-          <div className="third-page flex flex-col items-center justify-center mt-36 px-6 md:px-20">
+          <div
+            className="third-page flex flex-col items-center justify-center mt-36 px-6 md:px-20"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="main-text text-center">
               <div className="text-4xl md:text-5xl font-[500]">
                 Our Features
@@ -172,7 +227,13 @@ export default function Tappa() {
               </div>
             </div>
           </div>
-          <div className="fourth-page flex justify-center items-center mt-36">
+          <div
+            className="fourth-page flex justify-center items-center mt-36"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="z-0">
               <Image src={asset5} className="w-screen"></Image>
             </div>
@@ -182,7 +243,13 @@ export default function Tappa() {
               they are far away.
             </div>
           </div>
-          <div className="fifth-page flex flex-col items-center mt-20 px-6">
+          <div
+            className="fifth-page flex flex-col items-center mt-20 px-6"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="main-text text-center flex flex-col items-center">
               <div className="text-3xl md:text-5xl font-[500]">
                 Best sticker for users
@@ -206,7 +273,13 @@ export default function Tappa() {
               </div>
             </div>
           </div>
-          <div className="sixth-page flex flex-col justify-center items-center mt-20">
+          <div
+            className="sixth-page flex flex-col justify-center items-center mt-20"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="main-text text-center text-4xl font-[500]">
               Thousands of users <br />
               talk about us
@@ -250,7 +323,13 @@ export default function Tappa() {
               </div>
             </div>
           </div>
-          <div className="seventh-page mt-32 flex items-center justify-center md:px-6">
+          <div
+            className="seventh-page mt-32 flex items-center justify-center md:px-6"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
             <div className="container flex flex-col md:flex-row w-fit justify-center items-center bg-[#6e41ff] sm:rounded-3xl">
               <div className="main-text py-10 px-16">
                 <div className="text text-3xl lg:text-5xl font-[500] max-w-screen-sm text-center md:text-start">
@@ -281,19 +360,19 @@ export default function Tappa() {
                   </button>
                 </div>
               </div>
-              <div className="mt-10">
+              <div className="mt-10 w-full flex justify-end items-end">
                 <Image src={asset7}></Image>
               </div>
             </div>
           </div>
         </section>
         <footer>
-          <div className="sm:mt-20 h-[25svh] bg-neutral-900 text-neutral-300">
+          <div className="sm:mt-20 bg-neutral-900 text-neutral-300">
             <div className="first-row flex justify-between items-center py-6 px-10">
               <div>
                 <Image src={logo_short} className="w-12"></Image>
               </div>
-              <div className="flex gap-3">
+              <div className="gap-3 hidden md:flex">
                 <a href="#">Price</a>
                 <a href="#">About</a>
                 <a href="#">Support</a>
@@ -301,16 +380,26 @@ export default function Tappa() {
                 <a href="#">Contacts</a>
               </div>
               <div className="flex gap-3">
-                <a href="#">logo</a>
-                <a href="#">logo</a>
+                <a href="#">
+                  <FaLinkedin />
+                </a>
+                <a href="#">
+                  <FaTelegram />
+                </a>
               </div>
             </div>
-            <span className="bg-neutral-100 h-1 w-full"></span>
-            <div className="second-row mt-4 flex justify-between px-10">
+
+            <div className="second-row mt-4 flex flex-col md:flex-row gap-3 justify-between items-center px-10 pb-6 text-neutral-400 text-sm">
               <div>@2023 All Rights Reserved.</div>
-              <div className="flex gap-3">
-                <a href="#">Terms and conditions</a>
-                <a href="#">Privacy statement</a>
+              <div className="flex flex-wrap items-center justify-center gap-3 ">
+                <a
+                  href="https://dribbble.com/shots/22904423-Tappa-Promotional-landing-page-design-for-the-messenger-app"
+                  target="_blank"
+                  className="hover:text-white"
+                >
+                  Designed by Outcrowd
+                </a>
+                <a href="#">Made by Deardo</a>
               </div>
             </div>
           </div>

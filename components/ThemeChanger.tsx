@@ -17,7 +17,7 @@ const ThemeChanger = () => {
       return (
         //sun icon
         <button
-          className="text-3xl text-black p-3"
+          className="text-3xl text-white p-3"
           onClick={() => {
             setTheme("light");
           }}
