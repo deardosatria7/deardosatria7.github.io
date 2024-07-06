@@ -4,6 +4,7 @@ import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "aos/dist/aos.js";
+import {useRef} from "react";
 import {useEffect} from "react";
 import ThemeChanger from "../components/ThemeChanger";
 import profilePic from "../public/foto_deardo.png";
@@ -14,6 +15,7 @@ import {FaLinkedin} from "react-icons/fa6";
 import {FaTelegram} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import {FaInstagram} from "react-icons/fa6";
+import {FaGithub} from "react-icons/fa";
 
 export default function Home() {
   useEffect(() => {
@@ -65,18 +67,28 @@ export default function Home() {
               data-aos-duration="1000"
               data-aos-once="true"
             >
-              <a
-                href="#projects"
-                className="button-projects bg-slate-800 dark:bg-blue-700 dark:hover:bg-white text-white hover:font-bold text-sm px-4 py-2 rounded-full duration-300 hover:scale-110 hover:text-slate-800 hover:bg-white"
+              <button
+                onClick={() => {
+                  const projects = document.getElementById("projects");
+                  projects?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+                className="button-projects bg-slate-800 dark:bg-blue-700 dark:hover:bg-white text-white hover:font-bold text-sm px-4 py-2 rounded-full duration-300 hover:scale-110 hover:text-slate-800 hover:bg-neutral-200"
               >
                 My projects
-              </a>
-              <a
-                href="#contacts"
+              </button>
+              <button
+                onClick={() => {
+                  const contacts = document.getElementById("contacts");
+                  contacts?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
                 className="text-sm hover:bg-neutral-200 dark:hover:bg-white dark:hover:text-black hover:font-bold px-4 py-2 rounded-full duration-300"
               >
                 Contact me
-              </a>
+              </button>
             </div>
           </div>
           <div className="image-container mt-10 md:mt-0 flex justify-center items-center px-8 max-w-sm mx-auto">
@@ -176,12 +188,6 @@ export default function Home() {
             <div>Contact me:</div>
             <div className="mt-8 flex justify-around w-60 mx-auto text-3xl text-neutral-500">
               <a
-                href="mailto:deardosatria1@gmail.com"
-                className="hover:text-red-400"
-              >
-                <MdEmail />
-              </a>
-              <a
                 href="https://www.linkedin.com/in/deardo-satria-5a8b69278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 className="hover:text-blue-600"
               >
@@ -191,10 +197,22 @@ export default function Home() {
                 <FaTelegram />
               </a>
               <a
+                href="https://github.com/deardosatria7"
+                className="hover:text-neutral-800 dark:hover:text-white"
+              >
+                <FaGithub />
+              </a>
+              <a
                 href="https://instagram.com/deardosatria_"
                 className="hover:text-pink-500"
               >
                 <FaInstagram />
+              </a>
+              <a
+                href="mailto:deardosatria1@gmail.com"
+                className="hover:text-red-400"
+              >
+                <MdEmail />
               </a>
             </div>
             <div className="mt-6 text-sm text-neutral-600 dark:text-neutral-400">
