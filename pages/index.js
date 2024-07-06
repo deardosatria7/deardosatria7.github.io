@@ -29,7 +29,7 @@ export default function Home() {
         {/* First page */}
         <div className="first-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:flex-row max-w-[900px] md:h-[70svh] mx-auto ">
           {/* ThemeChanger button */}
-          <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-blue-700 bg-neutral-800 shadow-md">
+          <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-blue-700 bg-neutral-800 shadow-md z-10">
             <ThemeChanger />
           </div>
           <div className="text-description">
