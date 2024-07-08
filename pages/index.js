@@ -29,16 +29,16 @@ export default function Home() {
       </Head>
       <section>
         {/* First page */}
-        <div className="first-page px-8 sm:px-12 flex flex-col justify-center items-center md:flex-row max-w-[900px] h-[100svh] max-h-[900px] mx-auto ">
+        <div className="first-page px-8 sm:px-12 flex flex-col justify-center items-center md:flex-row max-w-[900px] h-[100svh] max-h-[900px] mx-auto">
           {/* ThemeChanger button */}
           <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-blue-700 bg-neutral-800 shadow-md z-10">
             <ThemeChanger />
           </div>
           <div className="text-description">
             <div
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="600"
               data-aos-once="true"
             >
               👋 <span className="dark:text-neutral-300">Hello! I'm </span>
@@ -46,10 +46,10 @@ export default function Home() {
             </div>
             <div
               className="animation"
-              data-aos="fade-up"
-              data-aos-delay="1400"
+              data-aos="zoom-out"
+              data-aos-delay="1000"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="600"
               data-aos-once="true"
             >
               <div className="text-4xl font-bold mt-4">
@@ -61,10 +61,10 @@ export default function Home() {
             </div>
             <div
               className="mt-6 space-x-4"
-              data-aos="fade-up"
-              data-aos-delay="2600"
+              data-aos="zoom-out"
+              data-aos-delay="2000"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="600"
               data-aos-once="true"
             >
               <button
@@ -94,10 +94,10 @@ export default function Home() {
           <div className="image-container mt-10 md:mt-0 flex justify-center items-center px-8 max-w-sm mx-auto">
             <div
               className="flex items-center justify-center aspect-square overflow-hidden rounded-full bg-neutral-300 "
-              data-aos="fade-up"
+              data-aos="zoom-out"
               data-aos-delay="3000"
               data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
+              data-aos-duration="600"
               data-aos-once="true"
             >
               <Image
@@ -107,6 +107,9 @@ export default function Home() {
               ></Image>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center -mt-6 animate-bounce text-sm italic">
+          &#129047; scroll down for more
         </div>
 
         {/* Second page */}
