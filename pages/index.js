@@ -16,6 +16,7 @@ import {FaTelegram} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import {FaInstagram} from "react-icons/fa6";
 import {FaGithub} from "react-icons/fa";
+import {FaArrowDown} from "react-icons/fa";
 
 export default function Home() {
   useEffect(() => {
@@ -29,7 +30,7 @@ export default function Home() {
       </Head>
       <section>
         {/* First page */}
-        <div className="first-page px-8 sm:px-12 flex flex-col justify-center items-center md:flex-row max-w-[900px] h-[100svh] max-h-[900px] mx-auto">
+        <div className="first-page px-8 sm:px-12 flex flex-col justify-center items-center md:flex-row max-w-[900px] h-[100svh] max-h-[900px] mx-auto -mt-4">
           {/* ThemeChanger button */}
           <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-blue-700 bg-neutral-800 shadow-md z-10">
             <ThemeChanger />
@@ -108,8 +109,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center -mt-6 animate-bounce text-sm italic">
-          &#129047; scroll down for more
+        <div className="flex justify-center items-center -mt-8 animate-bounce text-sm italic">
+          <FaArrowDown /> &nbsp;scroll down for more
         </div>
 
         {/* Second page */}
