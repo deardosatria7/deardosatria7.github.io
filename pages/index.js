@@ -35,39 +35,26 @@ export default function Home() {
           <div className="fixed flex items-center justify-center bottom-6 right-4 rounded-full dark:bg-blue-700 bg-neutral-800 shadow-md z-10">
             <ThemeChanger />
           </div>
-          <div className="text-description">
-            <div
-              data-aos="zoom-out"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="600"
-              data-aos-once="true"
-            >
+          <div
+            className="text-description"
+            data-aos="zoom-out"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <div>
               👋 <span className="dark:text-neutral-300">Hello! I'm </span>
               <span className="font-semibold">Deardo Satria.</span>
             </div>
-            <div
-              className="animation"
-              data-aos="zoom-out"
-              data-aos-delay="1000"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="600"
-              data-aos-once="true"
-            >
-              <div className="text-4xl font-bold mt-4">
-                I'm a Front-End Web Developer
-              </div>
-              <div className="text-neutral-600 dark:text-neutral-200 mt-3">
-                An undergraduate junior front-end developer based in Indonesia.
-              </div>
+
+            <div className="text-4xl font-bold mt-4">
+              I'm a Front-End Web Developer
             </div>
-            <div
-              className="mt-6 space-x-4"
-              data-aos="zoom-out"
-              data-aos-delay="2000"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="600"
-              data-aos-once="true"
-            >
+            <div className="text-neutral-600 dark:text-neutral-200 mt-3">
+              An undergraduate junior front-end developer based in Indonesia.
+            </div>
+
+            <div className="mt-6 space-x-4">
               <button
                 onClick={() => {
                   const projects = document.getElementById("projects");
@@ -96,9 +83,9 @@ export default function Home() {
             <div
               className="flex items-center justify-center aspect-square overflow-hidden rounded-full bg-neutral-300 "
               data-aos="zoom-out"
-              data-aos-delay="3000"
+              data-aos-delay="1200"
               data-aos-easing="ease-in-out"
-              data-aos-duration="600"
+              data-aos-duration="1000"
               data-aos-once="true"
             >
               <Image
