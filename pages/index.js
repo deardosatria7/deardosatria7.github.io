@@ -90,7 +90,7 @@ export default function Home() {
             >
               <Image
                 src={profilePic}
-                className="z-10 w-full -mr-7 -mt-6"
+                className="z-10 w-full -mr-4 -mt-6"
                 loading="eager"
               ></Image>
             </div>
