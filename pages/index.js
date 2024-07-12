@@ -165,7 +165,7 @@ export default function Home() {
 
         {/* Fourth page */}
         <div
-          className="fourth-page h-[65svh] md:h-[50svh] max-h-[780px] px-5 sm:px-12 flex justify-center items-center text-center"
+          className="fourth-page h-[65svh] max-h-[780px] px-5 sm:px-12 flex justify-center items-center text-center"
           id="contacts"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
