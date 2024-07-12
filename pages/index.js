@@ -102,7 +102,7 @@ export default function Home() {
 
         {/* Second page */}
         <div
-          className="second-page mt-16 px-8 sm:px-12 flex flex-col md:items-center md:text-center"
+          className="second-page max-h-[780px] mt-16 px-8 sm:px-12 flex flex-col md:items-center md:justify-center md:text-center"
           id="projects"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
@@ -138,7 +138,7 @@ export default function Home() {
 
         {/* Third page */}
         <div
-          className="third-page mt-20 px-8 sm:px-12 flex flex-col md:items-center md:text-center"
+          className="third-page max-h-[780px] mt-20 px-8 sm:px-12 flex flex-col md:items-center md:justify-center md:text-center"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
           data-aos-duration="600"
@@ -165,7 +165,7 @@ export default function Home() {
 
         {/* Fourth page */}
         <div
-          className="fourth-page h-[80vh] px-5 sm:px-12 flex justify-center items-center text-center"
+          className="fourth-page h-[65svh] md:h-[50svh] max-h-[780px] px-5 sm:px-12 flex justify-center items-center text-center"
           id="contacts"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
