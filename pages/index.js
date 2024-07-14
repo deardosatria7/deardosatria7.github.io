@@ -139,7 +139,7 @@ export default function Home() {
               </span>
             </div>
             <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.15] duration-300">
-              <Link href={"/projects/tappa"}>
+              <Link href={"/projects/gitclick"}>
                 <Image
                   src={gitclick}
                   className="w-80 rounded-lg shadow-xl border-[1px] border-white "
