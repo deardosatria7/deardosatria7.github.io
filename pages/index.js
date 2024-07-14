@@ -102,7 +102,7 @@ export default function Home() {
 
         {/* Second page */}
         <div
-          className="second-page max-h-[780px] mt-16 px-8 sm:px-12 flex flex-col md:items-center md:justify-center md:text-center"
+          className="second-page md:max-h-[780px] mt-16 px-8 sm:px-12 flex flex-col md:items-center md:justify-center md:text-center"
           id="projects"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
@@ -117,21 +117,47 @@ export default function Home() {
             </div>
           </div>
           <div className="projects-container flex flex-wrap justify-center gap-7 mt-6 md:mt-8">
-            <div>
+            <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.15] duration-300">
               <Link href={"/projects/tappa"}>
                 <Image
                   src={tappa}
-                  className="w-80 grayscale rounded-lg hover:scale-[1.15] hover:grayscale-0 duration-300 shadow-xl border-[1px] border-white"
+                  className="w-80 rounded-lg shadow-xl border-[1px] border-white"
                 ></Image>
               </Link>
+              <span className="w-full mt-8 text-xl font-semibold">
+                Tappa UI
+              </span>
+              <span className="mt-2">
+                Translating design from figma to a fully responsive web UI.
+                Designed by Outcrowd on dribble.{" "}
+                <Link
+                  href={"/projects/tappa"}
+                  className="font-semibold text-blue-600 italic"
+                >
+                  See more
+                </Link>
+              </span>
             </div>
-            <div>
-              <Link href={"/projects/gitclick"}>
+            <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.15] duration-300">
+              <Link href={"/projects/tappa"}>
                 <Image
                   src={gitclick}
-                  className="w-80 grayscale rounded-lg hover:scale-[1.15] hover:grayscale-0 duration-300 shadow-xl border-[1px] border-white"
+                  className="w-80 rounded-lg shadow-xl border-[1px] border-white "
                 ></Image>
               </Link>
+              <span className="w-full mt-8 text-xl font-semibold">
+                Gitclick UI
+              </span>
+              <span className="mt-2">
+                Translating design from figma to a fully responsive web UI.
+                Designed by Ronas IT on dribble.{" "}
+                <Link
+                  href={"/projects/tappa"}
+                  className="font-semibold text-blue-600 italic"
+                >
+                  See more
+                </Link>
+              </span>
             </div>
           </div>
         </div>
