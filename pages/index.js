@@ -117,7 +117,7 @@ export default function Home() {
             </div>
           </div>
           <div className="projects-container flex flex-wrap justify-center gap-7 mt-6 md:mt-8">
-            <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.15] duration-300">
+            <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.1] duration-300">
               <Link href={"/projects/tappa"}>
                 <Image
                   src={tappa}
@@ -138,7 +138,7 @@ export default function Home() {
                 </Link>
               </span>
             </div>
-            <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.15] duration-300">
+            <div className="flex flex-col justify-start items-center bg-neutral-200 dark:bg-neutral-800 max-w-[400px] text-left px-10 py-6 rounded-xl hover:scale-[1.1] duration-300">
               <Link href={"/projects/gitclick"}>
                 <Image
                   src={gitclick}
@@ -180,7 +180,7 @@ export default function Home() {
             <div className="flex flex-col justify-center items-center">
               <Image
                 src={certificate}
-                className="w-80 rounded-lg hover:scale-[1.15] duration-300 shadow-lg"
+                className="w-80 rounded-lg hover:scale-[1.1] duration-300 shadow-lg"
               ></Image>
               <span className="mt-4 italic text-sm text-center text-neutral-600 dark:text-neutral-400">
                 Junior Web Developer certification by BNSP Indonesia
