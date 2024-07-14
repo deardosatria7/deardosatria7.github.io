@@ -152,7 +152,7 @@ export default function Home() {
                 Translating design from figma to a fully responsive web UI.
                 Designed by Ronas IT on dribble.{" "}
                 <Link
-                  href={"/projects/tappa"}
+                  href={"/projects/gitclick"}
                   className="font-semibold text-blue-600 italic"
                 >
                   See more
